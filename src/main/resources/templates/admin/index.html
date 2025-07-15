@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{base::layout(~{::section})}">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a2e0da3e2c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<section>
+    <div class="container py-5">
+        <h2 class="text-center mb-5 fw-bold text-primary">Admin Dashboard</h2>
+
+        <div class="row g-4 justify-content-center">
+
+            <!-- Add Product -->
+            <div class="col-md-4 col-sm-6">
+                <a href="/admin/loadAddProduct" class="dashboard-card-link text-decoration-none">
+                    <div class="dashboard-card shadow-sm bg-light text-dark text-center p-4 rounded-3 h-100">
+                        <i class="fa-solid fa-square-plus fa-2x mb-3 text-primary"></i>
+                        <h5 class="fw-semibold">Add Product</h5>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Add Category -->
+            <div class="col-md-4 col-sm-6">
+                <a href="/admin/category" class="dashboard-card-link text-decoration-none">
+                    <div class="dashboard-card shadow-sm bg-warning text-dark text-center p-4 rounded-3 h-100">
+                        <i class="fa-solid fa-list fa-2x mb-3"></i>
+                        <h5 class="fw-semibold">Add Category</h5>
+                    </div>
+                </a>
+            </div>
+
+            <!-- View Product -->
+            <div class="col-md-4 col-sm-6">
+                <a href="/admin/products" class="dashboard-card-link text-decoration-none">
+                    <div class="dashboard-card shadow-sm bg-success text-white text-center p-4 rounded-3 h-100">
+                        <i class="fa-solid fa-table-list fa-2x mb-3"></i>
+                        <h5 class="fw-semibold">View Products</h5>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Orders -->
+            <div class="col-md-4 col-sm-6">
+                <a href="/admin/orders" class="dashboard-card-link text-decoration-none">
+                    <div class="dashboard-card shadow-sm bg-info text-white text-center p-4 rounded-3 h-100">
+                        <i class="fa-solid fa-box-open fa-2x mb-3"></i>
+                        <h5 class="fw-semibold">Orders</h5>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Users -->
+            <div class="col-md-4 col-sm-6">
+                <a href="/admin/users?type=1" class="dashboard-card-link text-decoration-none">
+                    <div class="dashboard-card shadow-sm bg-primary text-white text-center p-4 rounded-3 h-100">
+                        <i class="fa-solid fa-circle-user fa-2x mb-3"></i>
+                        <h5 class="fw-semibold">Users</h5>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Add Admin -->
+            <div class="col-md-4 col-sm-6">
+                <a href="/admin/add-admin" class="dashboard-card-link text-decoration-none">
+                    <div class="dashboard-card shadow-sm bg-secondary text-white text-center p-4 rounded-3 h-100">
+                        <i class="fa-solid fa-user-plus fa-2x mb-3"></i>
+                        <h5 class="fw-semibold">Add Admin</h5>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Admin List -->
+            <div class="col-md-4 col-sm-6">
+                <a href="/admin/users?type=2" class="dashboard-card-link text-decoration-none">
+                    <div class="dashboard-card shadow-sm bg-dark text-white text-center p-4 rounded-3 h-100">
+                        <i class="fa-solid fa-user-shield fa-2x mb-3"></i>
+                        <h5 class="fw-semibold">Admin List</h5>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
